@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Eğer doğrudan bir dosya veya dizin varsa, yönlendirme yapma
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tüm diğer istekleri index.php'ye yönlendir
+RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+
+
+
+</IfModule>
