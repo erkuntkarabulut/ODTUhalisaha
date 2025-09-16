@@ -2,7 +2,7 @@
 <?php include __DIR__ . '/../layout/navbar.php'; ?>
 
 <div class="container mt-4">
-    <h2 class="text-center mb-4">Dashboard</h2>
+    <h2 class="text-center mb-4">Dashboard 2</h2>
 
     <!-- Başarı & Hata Mesajları -->
     <?php if (!empty($_GET['error']) || !empty($_GET['success'])): ?>
